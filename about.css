@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+   /* background-image: url(Screenshot\ 2024-08-12\ 203037.png);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: #e8e9e0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul li p{
+    font-family: Monotype Corsiva;
+    font-size: 30px;
+    color: #454e34;
+}
+nav ul li span {
+    font-family: Microsoft Uighur;
+    font-size: 30px;
+    color: #454e34;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 60px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:#92a079;
+}
+nav a:hover{
+    background-color: #f0f0f0f0;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 999;
+    backdrop-filter:blur(10px);
+    background-color: #e8e9e0;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.1);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+   width: 100px;
+}
+.sidebar a{
+    width: 100px;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+.logobar h1{
+    font-family:Monotype Corsiva ;
+    font-size:70px;
+    color: #454e34;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.logobar span{
+    font-family:Sakkal Majalla ;
+}
+.logobar hr{
+    color: #454e34;
+}
+
+nav ul i{
+    margin-right: 10px;
+    color: #8e9c76;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+@media(max-width:800px){
+    .logobar{
+        display: none;
+    }
+    .h1{
+        font-size: 2rem;
+    }
+}
+@media(max-width:400px){
+    .h1{
+        font-size: 2rem;
+    }
+}
+/*************************body*********************/
+.content {
+    text-align: center;
+    color: #596348;
+
+}
+.content  b{
+    font-size: 15px;
+    font-weight: 100px;
+}
+.content h3{
+font-size: 18px;
+}
+.socialicons{
+    display: flex;
+    justify-content: center;
+   }
+   
+   .socialicons a{
+       text-decoration: none;
+       padding: 10px;
+       margin: 10px;
+       background-color: white;
+       border-radius: 50%;
+   }
+   
+   .socialicons a i{
+       font-size: 1.5em;
+       color: black;
+       opacity: 0.9;
+   }
+   
+   .socialicons a:hover{
+       background-color: black;
+       transition: 0.5s;
+   }
+   
+   .socialicons a:hover i{
+       color: white;
+       transition: 0.5s;
+   
+   }
+   
+
+
+
+
+
+/*************footer***************************/
+.footerBootom{
+    font-family:Microsoft Uighur ;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.footerBootom p{
+    color: #3d462d;
+}
